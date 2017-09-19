@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leejuwon.social_service.member_calc.Result">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="551dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_height="70dp"
+                >
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="110dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mainbar"
+                    android:orientation="vertical"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/c1"
+                android:padding="50sp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorI"
+                android:gravity="center"
+                android:text="New Text"
+                android:textColor="#000000"
+                android:textSize="15pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/colorI"
+                android:gravity="center"
+                android:text="New Text"
+                android:textColor="#000000"
+                android:textSize="11pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tex1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="누가 받을 수 있나요?"
+                android:textColor="@color/colorF"
+                android:textSize="11pt"
+                android:textStyle="bold"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/colorH"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="어떤 혜택을 받을 수 있나요?"
+                android:textColor="@color/colorF"
+                android:textSize="11pt"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/a2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/colorH"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="어떤 혜택을 받을 수 있나요?"
+                android:textColor="@color/colorF"
+                android:textSize="11pt"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="New Text"
+                android:textColor="@color/colorH"
+                android:textSize="13dp" />
+
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn"
+                android:orientation="vertical"
+                android:text="전화 걸기"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>

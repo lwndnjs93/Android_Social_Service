@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Social_Service</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_start">Start</string>
+    <string name="str_stop">Stop</string>
+    <string name="sitename"><b>누가</b></string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

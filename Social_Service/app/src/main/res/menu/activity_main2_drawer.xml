@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_security"
+            android:icon="@mipmap/ic_security"
+            android:title="내 정보" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_searchservice"
+            android:icon="@mipmap/ic_tree"
+            android:title="복지서비스 찾기" />
+        <item
+            android:id="@+id/nav_searchcourse"
+            android:icon="@mipmap/ic_maps"
+            android:title="복지시설 찾기" />
+
+        <item
+            android:id="@+id/nav_chooseservice"
+            android:icon="@mipmap/ic_launcher"
+            android:title="즐겨찾는 길" />
+
+        <item
+            android:id="@+id/nav_calculate"
+            android:icon="@mipmap/ic_calculate"
+            android:title="모의계산" />
+
+
+    </group>
+
+</menu>

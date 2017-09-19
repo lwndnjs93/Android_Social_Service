@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leejuwon.social_service.calculate.basic01.Basic01_01">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_height="70dp"
+            >
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mainbar"
+                android:orientation="vertical"
+                android:padding="0sp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/c1"
+        android:padding="50sp"
+        />
+
+    <ImageView
+        android:id="@+id/explain"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/c3"
+        android:padding="50sp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="25dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="330dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:layout_height="25dp"
+            android:background="@drawable/border4"
+            android:textColor="@color/colorH"
+            android:textStyle="bold"
+            android:textSize="5pt"
+            android:text="조회하신 결과는 단순 참고용으로만 활용하여 주시기 바랍니다."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        >
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="40dp"
+        android:textColor="@color/colorH"
+        android:textStyle="bold"
+        android:textSize="13pt"
+        android:text="모의계산 결과"
+        />
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border2"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:text="New Text"
+        android:textColor="@color/colorH"
+        android:textSize="8pt"
+        />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/border2"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="이는 귀하가 입력하신 자료를 기초로 모의계산된 것이며,실제신청 후 결과는 다를 수 있음을 알려드리며, 주소지 관할 읍면동 주민센터에 방문하시어 상담하시기 바랍니다."
+            android:textColor="@color/colorH"
+            android:textSize="7pt" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:text="상담문의: 보건복지 콜센터 129"
+                android:textColor="@color/colorB"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/calling"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn2"
+            android:onClick="calling"
+            android:text="전화 걸기"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

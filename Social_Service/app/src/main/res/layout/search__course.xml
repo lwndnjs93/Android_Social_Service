@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.leejuwon.social_service.Search_Course">
+
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_height="70dp"
+        >
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mainbar"
+            android:orientation="vertical"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:src="@drawable/ch7"
+    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorI"
+                    android:text="복지"
+                    android:textColor="@color/colorH"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorI"
+                    android:text="의료"
+                    android:textColor="@color/colorH"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorI"
+                    android:text="보육
+교육"
+                    android:textColor="@color/colorH"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:background="@color/colorI"
+                    android:text="드림카드                       가맹점"
+                    android:textColor="@color/colorH"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+            </fragment>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

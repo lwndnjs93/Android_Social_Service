@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:src="@drawable/mainbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mainbar"
+                    android:orientation="vertical"
+                    android:padding="0sp"
+                    android:scaleType="centerCrop" />
+
+
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:padding="0sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/easyser" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="30sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/service" />
+
+                <EditText
+                    android:id="@+id/editTextFilter"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border2"
+                    android:hint="서비스를 입력해주세요."
+                    android:padding="5dp"
+                    android:textColor="@color/colorJ"
+                    android:textColorHint="@color/colorJ"
+                    android:textSize="15dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+                        <ListView
+                            android:id="@+id/listview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textFilterEnabled="true" />
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leejuwon.social_service.calculate.basic01.Basic01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    >
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mainbar"
+            android:orientation="vertical"
+            android:padding="0sp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/c1"
+            android:padding="50sp"
+            />
+
+        <ImageView
+            android:id="@+id/explain"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/c3"
+            android:padding="50sp"
+            android:scaleType="centerCrop" />
+
+
+    <LinearLayout
+        android:layout_below="@id/explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="57dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            >
+
+
+            <Button
+                android:id="@+id/abode01"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:background="@color/colorH"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="7pt"
+                android:text="거주지"
+                android:paddingBottom="5dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/work"
+                android:text="근로소득"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/work01"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/business"
+                android:text="사업소득"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/business01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/property"
+                android:text="재산소득"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/property01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/public_result"
+                android:text="공적이전소득"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/public_result01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/free"
+                android:text="무료임차소득"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginStart="33dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/free01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/building"
+                android:text="건축물"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/building01"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginStart="55dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/building01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/land"
+                android:text="토지"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginStart="72dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/land01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/deposit_for_lease"
+                android:text="임차보증금"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/deposit_for_lease01"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/ect_property"
+                android:text="기타재산"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/ect_property01"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/plane"
+                android:text="항공기 선박"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="43dp"
+                android:layout_marginStart="43dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/plane01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/membership"
+                android:text="회원권"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="57dp"
+                android:layout_marginStart="57dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/membership01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/car"
+                android:text="자동차"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="58dp"
+                android:layout_marginStart="58dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/car01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/capital_property"
+                android:text="금융재산"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="51dp"
+                android:layout_marginStart="51dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/capital_property01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/loan"
+                android:text="대출금"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="58dp"
+                android:layout_marginStart="58dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/loan01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/security_deposit"
+                android:text="임대보증금"
+                android:textColor="@color/colorH"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="43dp"
+                android:layout_marginStart="43dp" />
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:id="@+id/security_deposit01" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/basic01_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계산하기"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

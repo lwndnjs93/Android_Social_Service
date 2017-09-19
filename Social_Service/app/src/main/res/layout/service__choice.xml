@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.leejuwon.social_service.Service_Choice">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_height="70dp"
+            >
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mainbar"
+                android:orientation="vertical"
+                android:padding="0sp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/easyser" />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/info00"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/search"
+                android:scaleType="centerCrop"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border2"
+                android:src="@drawable/btn3"
+                android:layout_above="@+id/voice"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info00"
+                android:background="@color/colorH"
+                android:textColor="#ffffff"
+                android:text="음성 검색"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorI"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="3dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/national_merit"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b1"
+                        android:text="국가유공자"
+                        android:textColor="@color/colorI"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/industrial_accident"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b2"
+
+                        android:background="@color/colorPrimaryDark"
+                        android:text="산업재해"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/disability"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorB"
+                        android:text="장애"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b3"
+                        android:textColor="@color/colorI"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/Elderly"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorB"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/b4"
+                    android:text="고령층"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="3dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/low_income"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b19"
+                        android:text="저소득" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/teenager"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="청소년"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b20" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/emergency"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorB"
+                        android:text="긴급지원"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b21" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/homeless"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorB"
+                    android:text="무주택"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/b7" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/infants"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b8"
+                        android:text="영유아" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageButton
+                        android:id="@+id/childbirth"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="출산"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b10" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageButton
+                        android:id="@+id/harm"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorB"
+                        android:text="피해"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b12" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/family"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorB"
+                    android:text="가정"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/b11" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageButton
+                        android:id="@+id/teenhouse"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b14"
+                        android:text="소년소녀   가정" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+
+                    <ImageButton
+                        android:id="@+id/child"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b15"
+                        android:text="아동" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+
+                    <ImageButton
+                        android:id="@+id/single_parent"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorB"
+                        android:text="한부모"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b16" />
+
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/grand_parent"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorB"
+                    android:text="조손 가족"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/b22" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/work"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="근로"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b17" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+
+                    <ImageButton
+                        android:id="@+id/serviceperson"
+
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="군인"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@color/colorI"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp">
+
+                    <ImageButton
+                        android:id="@+id/social_group"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:background="@color/colorB"
+                        android:text="취약계층"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b23" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.leejuwon.social_service.MainActivity"
+    android:background="#ffffff"
+    android:clickable="true"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mainbar"
+                android:orientation="vertical"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/search_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#79bd9a"
+                    android:padding="8sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/servicebnt2" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#a8dba8"
+                    android:padding="10sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mcbnt2"
+                    >
+                    </ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/search_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_gravity="left"
+                    android:background="#cff09e"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gjsbnt2"
+                    android:padding="10dp"
+                    >
+                </ImageButton>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/qa0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#87C6C8"
+                    android:padding="10sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qa"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+
+            <LinearLayout
+                    android:id="@+id/SliderDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    >
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="2dp" android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/membercalc"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorAccent"
+                android:text="회원 모의계산"
+                android:textSize="12pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+            <Button
+                android:id="@+id/memberInfo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#50BEBE"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="회원정보"
+                />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="#ffffff"
+                android:text="02)6360-5522"
+                android:textColor="@color/colorF"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp">
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
